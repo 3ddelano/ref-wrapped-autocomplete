@@ -23,14 +23,15 @@ class CustomClassAlpha : public Reference {
         return ref;
     }
 
-    CustomClassBeta return_beta() {
-        CustomClassBeta beta;
+    CustomClassBeta* return_beta() {
+        CustomClassBeta* beta = CustomClassBeta::_new();
         return beta;
     }
 };
 
 void CustomClassAlpha::_register_methods() {
     register_method("return_ref_beta", &CustomClassAlpha::return_ref_beta);
+    register_method("return_beta", &CustomClassAlpha::return_beta);
 }
 
 #endif
