@@ -1,0 +1,10 @@
+.sconsign.dblite
+run.bat
+*.exp
+*.lib
+*.obj
+*.o
+.env
+bin/
+mongo-godot-*.zip
+.vscode
