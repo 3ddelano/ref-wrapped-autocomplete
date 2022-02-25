@@ -3,6 +3,8 @@
 
 Demo showcasing that autocomplete doesn't work for GDNative classes in GDScript when they are wrapped in Ref<> or a pointer is returned.
 
+Tested on: Win10 x64, Godot 3.4.2
+
 `CustomClassAlpha`
   - `return_beta()` - Returns pointer to `CustomClassBeta`
   - `return_ref_beta()` - Returns `Ref<CustomClassBeta>`
